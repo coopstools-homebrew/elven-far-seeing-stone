@@ -1,24 +1,11 @@
 # users_app
+A simple app, written with the VueJs framework, for testing a CI/CD pipeline
 
-## Project setup
-```
-npm install
-```
+## Tagging
+I'm using a prebuilt tagging action that uses an angular standard syntax. A tag will be created by bumping a value from a previous tag if the commit message follows a set pattern:
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+`fix(pencil): ...` <- hotfix version bump
 
-### Compiles and minifies for production
-```
-npm run build
-```
+`feat(pencil): ...` <- minor (non-breaking) change
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+`perf(pencil): ...` <- major (breaking) change
