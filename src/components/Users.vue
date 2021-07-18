@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <h3>List of users</h3>
-    <div v-for="user in users" v-bind:key="user">
+    <div v-for="user in users" :key="user.id">
       {{ user.name }}, {{ user.age }}, really, really likes {{ user.favorite }}
     </div>
   </div>
@@ -15,7 +15,7 @@ export default {
   },
   created() {
     this.$http
-        .get('http://home.coopstools.com/person')
+        .get('http://home.coopstools.com/api/person')
         .then(r => (this.users = r.data))
   }
 }
