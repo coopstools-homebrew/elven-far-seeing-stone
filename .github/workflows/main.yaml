@@ -9,8 +9,8 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
-      - name: Run go tests
-        run: cd src && go test ./...
+      - name: Run vue tests
+        run: echo "\n\n!!!!! Really need to add vue test here !!!!!\n\n"
       - name: Bump version and push tag
         id: tag_version
         uses: mathieudutour/github-tag-action@v5.5
