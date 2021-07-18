@@ -1,0 +1,13 @@
+name: CI Build
+
+on:
+  push:
+    branches: [ test* ]
+
+jobs:
+  build:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+      - name: Attempt build
+        run: docker build -t temp_app .
