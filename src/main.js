@@ -13,22 +13,20 @@ Vue.prototype.$http = axios
 Vue.use(Router)
 Vue.use(Meta)
 
+
 const router = new Router({
-    routes:[
+    routes: [
         {
             path: "/",
-            name: "home",
             component: HelloWorld,
             props: {
                 msg: "Welcome!!"
             }
         }, {
             path: "/users",
-            name: 'users',
             component: Users,
         }, {
             path: '/ns',
-            name: 'namespace',
             component: Namespaces
         }
     ],
@@ -38,4 +36,4 @@ const router = new Router({
 new Vue({
   render: h => h(App),
   router
-})
+}).$mount('#app')
