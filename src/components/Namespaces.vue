@@ -1,9 +1,13 @@
 <template>
   <div class="hello">
     <h3>List of Active Namespaces</h3>
-    <div v-for="namespace in namespaces" :key="namespace.name">
-      {{ namespace.name }}  Age: {{ namespace.age.days }} days and {{ namespace.age.hours }} hours
-    </div>
+    <table>
+      <tr class="namespace" v-for="namespace in namespaces" :key="namespace.name">
+        <td class="ns_name">{{ namespace.name }}</td>
+        <td>{{ namespace.age.days }} days and {{ namespace.age.hours }} hours</td>
+      </tr>
+    </table>
+
   </div>
 </template>
 
@@ -22,5 +26,11 @@ export default {
 </script>
 
 <style scoped>
-
+.ns_name {
+  text-align: left;
+  border-right: 100px;
+}
+.namespace {
+  margin: 10px
+}
 </style>
