@@ -20,8 +20,12 @@ const router = new Router({
             path: "/",
             component: HelloWorld,
             props: {
-                msg: "Welcome!!"
+                msg: "friend"
             }
+        }, {
+            path: "/h/:msg",
+            component: HelloWorld,
+            props: true
         }, {
             path: "/users",
             component: Users,
