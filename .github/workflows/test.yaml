@@ -9,5 +9,11 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
-      - name: Attempt build
-        run: docker build -t temp_app .
+      - name: Build and Push image
+        uses: mr-smithers-excellent/docker-build-push@v5
+        with:
+          image: ${{ github.repository }}
+          tags: test
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}

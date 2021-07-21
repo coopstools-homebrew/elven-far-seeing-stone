@@ -16,7 +16,7 @@ jobs:
         uses: mathieudutour/github-tag-action@v5.5
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-      - name: Push image
+      - name: Build and Push image
         uses: mr-smithers-excellent/docker-build-push@v5
         with:
           image: ${{ github.repository }}

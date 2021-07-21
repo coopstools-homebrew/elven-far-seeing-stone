@@ -1,7 +1,6 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <a href="/users">Users</a>
   </div>
 </template>
 

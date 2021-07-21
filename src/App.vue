@@ -1,20 +1,17 @@
 <template>
   <div id="app">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-    <Users/>
+    <router-link to="/">Home</router-link>
+    <router-link to="/users">Users</router-link>
+    <router-link to="/ns">Namespaces</router-link>
+    <div class="content">
+      <router-view></router-view>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-import Users from './components/Users.vue'
-
 export default {
   name: 'App',
-  components: {
-    HelloWorld,
-    Users
-  }
 }
 </script>
 
