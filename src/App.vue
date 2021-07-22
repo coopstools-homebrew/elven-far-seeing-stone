@@ -2,10 +2,10 @@
   <div id="app">
     <h1>My General Purpose App</h1>
     <div class="routes">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/users">Users</router-link> |
-      <router-link to="/ns">Namespaces</router-link> |
-      <router-link to="/h/Boludo">Other</router-link>
+      <router-link to="/quizzle_parse/">Home</router-link> |
+      <router-link to="/quizzle_parse/users">Users</router-link> |
+      <router-link to="/quizzle_parse/ns">Namespaces</router-link> |
+      <router-link to="/quizzle_parse/h/Boludo">Other</router-link>
     </div>
     <div class="content">
       <router-view class="view"></router-view>

@@ -13,24 +13,25 @@ Vue.prototype.$http = axios
 Vue.use(Router)
 Vue.use(Meta)
 
+const url_prefix = "/quizzle_parse";
 
 const router = new Router({
     routes: [
         {
-            path: "/",
+            path: url_prefix + "/",
             component: HelloWorld,
             props: {
                 msg: "friend"
             }
         }, {
-            path: "/h/:msg",
+            path: url_prefix + "/h/:msg",
             component: HelloWorld,
             props: true
         }, {
-            path: "/users",
+            path: url_prefix + "/users",
             component: Users,
         }, {
-            path: '/ns',
+            path: url_prefix + "/ns",
             component: Namespaces
         }
     ],
