@@ -15,7 +15,7 @@ export default {
   },
   created() {
     this.$http
-        .get('http://home.coopstools.com/quizzle_parse/api/person')
+        .get('http://home.coopstools.com/quizzle_parse/user/')
         .then(r => (this.users = r.data))
   }
 }

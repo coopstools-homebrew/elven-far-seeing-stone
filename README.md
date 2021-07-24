@@ -1,4 +1,4 @@
-# users_app
+# elven-far-seeing-stone
 A simple app, written with the VueJs framework, for testing a CI/CD pipeline
 
 ## Tagging

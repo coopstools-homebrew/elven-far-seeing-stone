@@ -12,7 +12,7 @@ jobs:
       - name: Build and Push image
         uses: mr-smithers-excellent/docker-build-push@v5
         with:
-          image: ${{ github.repository }}
+          image: ${{ github.event.repository.name }}
           tags: test
           registry: ghcr.io
           username: ${{ github.actor }}

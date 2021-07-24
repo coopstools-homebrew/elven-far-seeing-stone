@@ -19,7 +19,7 @@ export default {
   },
   created() {
     this.$http
-        .get('http://home.coopstools.com/quizzle_parse/namespace/')
+        .get('http://home.coopstools.com/quizzle_parse/ns/')
         .then(r => (this.namespaces = r.data))
   }
 }
