@@ -11,8 +11,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: Run vue tests
         run: echo "\n\n!!!!! Really need to add vue test here !!!!!\n\n"
-      - name: Tag, build, and push
-        id: tagger
-        uses: coopstools-homebrew/deep-sea-currents@v0.0.1
+      - id: tagger
+        uses: coopstools-homebrew/deep-sea-currents@v0.0.2
       - name: Print version again
         run: echo "version - ${{ steps.tagger.outputs.tag }}"
