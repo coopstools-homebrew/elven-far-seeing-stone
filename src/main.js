@@ -7,6 +7,7 @@ import Meta from 'vue-meta'
 import HelloWorld from "./components/HelloWorld";
 import Users from "./components/Users";
 import Namespaces from "./components/Namespaces";
+import Federation from "./components/Federation";
 
 Vue.config.productionTip = false
 Vue.prototype.$http = axios
@@ -33,6 +34,9 @@ const router = new Router({
         }, {
             path: url_prefix + "/ns",
             component: Namespaces
+        }, {
+            path: url_prefix + "/federation",
+            component: Federation
         }
     ],
     mode: "history"
