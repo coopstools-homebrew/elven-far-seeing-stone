@@ -3,6 +3,7 @@ import App from './App.vue'
 import axios from "axios";
 import Router from 'vue-router'
 import Meta from 'vue-meta'
+import VueGoogleCharts from 'vue-google-charts'
 
 import HelloWorld from "./components/HelloWorld";
 import Users from "./components/Users";
@@ -13,6 +14,7 @@ Vue.config.productionTip = false
 Vue.prototype.$http = axios
 Vue.use(Router)
 Vue.use(Meta)
+Vue.use(VueGoogleCharts)
 
 const url_prefix = "/quizzle_parse";
 
@@ -35,7 +37,7 @@ const router = new Router({
             path: url_prefix + "/ns",
             component: Namespaces
         }, {
-            path: url_prefix + "/federation",
+            path: url_prefix + "/the-fed",
             component: Federation
         }
     ],

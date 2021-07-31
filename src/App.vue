@@ -5,7 +5,7 @@
       <router-link to="/quizzle_parse/">Home</router-link> |
       <router-link to="/quizzle_parse/users">Users</router-link> |
       <router-link to="/quizzle_parse/ns">Namespaces</router-link> |
-      <router-link to="/quizzle_parse/federation">Nodes</router-link> |
+      <router-link to="/quizzle_parse/the-fed">Nodes</router-link> |
       <router-link to="/quizzle_parse/h/Boludo">Other</router-link>
     </div>
     <div class="content">
